@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <header>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>Datos de Usuario</title>
+    </header>
+
+    <body>
+        <h2>Rellena tu CV</h2>
+        <div class="Formulario">
+            <form>
+                <div class="datos">
+                    <span>Nombre</span></br>
+                    <input type="text" name="Nombre" required/></br>
+                    <span>Apellidos</span></br>
+                    <input type="text" name="Apellidos" required size="50"/></br>
+                    <span>Contraseña</span></br>
+                    <input type="password" name="Contraseña" required/></br></br>
+                    <span>Confirme contraseña</span></br>
+                    <input type="text" name="Confirmar" required/></br>
+                    <span>Identificación</span></br>
+                </div>
+                <div class="Sexo">
+                    <select>
+                        <option value="TI">TI</option>
+                        <option value="CC">CC</option>
+                    </select>
+                </div>
+                <div class="Identificacion">
+                    <input type="text" name="Identificación" required/></br>
+                    <span>Sexo</span></br>
+                    <input type="radio" name="Sexo" value="H"/>Hombre</br>
+                    <input type="radio" name="Sexo" value="M"/>Mujer</br></br>
+                </div>
+                <div class="Subir_archivo">
+                    <span>Incluir mi foto</span></br>
+                    <input type="file" name="foto" accept="image/png, image/jpeg"/></br></br>
+                    <label><input type="checkbox" name="Estudiante">Estudiante....</label>
+                </div>
+                <div class="datos_personales">
+                    <fieldset style="width: 425px;;">
+                        <legend>Datos personales</legend>
+                        <span>Departamento</span></br>
+                        <select>
+                            <option>-seleccione-</option>
+                            <option>Amazonas</option>
+                        </select></br></br>
+                        <div class="fecha_nacimiento">
+                            <span>Fecha de nacimiento</span></br>
+                            <input type="text" name="dia" size="10" requiered/>
+                            <select>
+                                <option>Enero</option>
+                                <option>Febrero</option>
+                                <option>Marzo</option>
+                                <option>Abril</option>
+                                <option>Mayo</option>
+                                <option>Junio</option>
+                                <option>Julio</option>
+                                <option>Agosto</option>
+                                <option>Septiembre</option>
+                                <option>Octubre</option>
+                                <option>Noviembre</option>
+                                <option>Diciembre</option>
+                            </select>
+                            <input type="text" name="año" size="10" requiered/>
+                        </div></br>
+                        <div class="temas_de_interés">
+                            <span>Temas de interes</span>
+                            <div style = "width: 300px; height: 100px; line-height: 3px; overflow-y:scroll; border: thin #000 solid; padding: 0px;">
+                                <p>Administración base de datos</p>
+                                <p>Análisis y programación</p>
+                                <p>Arquitectura</p>
+                                <p>Calidad</p>
+                                <p>ERP,CRM,Busines Intelligence</p>
+                                <p>Inteligencia Artificial</p>
+                                <p>Sistemas Unix</p>
+                                <p>Amazon AWS</p>
+                        </div>
+                    </fieldset>
+                    <button>Guardar cambios</button>
+                    <button>Borrar los datos introducidos</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
